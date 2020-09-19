@@ -1,0 +1,179 @@
+body {
+    color: black;
+    padding: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* * {
+    border: 1px solid red;
+} */
+
+/* Container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* Header */
+header {
+    grid-row: 1/2;
+    border-bottom: 1.5px dashed pink;
+}
+
+/* Nav */
+header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-left: 0px;
+}
+
+header nav ul li {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li a {
+    padding: 6px 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    background-color: pink;
+    color: white;
+    text-shadow: 1px 1px black;
+    box-shadow: 3px 4px powderblue;
+}
+
+/* Banner */
+#banner {
+    grid-row: 2/3;
+    display: block;
+    margin: 0 auto;
+    padding: 30px 0;
+}  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: powderblue;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: pink;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+/* Main */
+main{
+    grid-row: 3/4;
+    border-top: 2px dashed pink;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+/* Articles */
+article {
+    border-bottom: 0.5px solid powderblue;
+    margin: 10px 0;
+}
+
+/* Address */
+address .street {
+    padding: 5px 0;
+}
+
+address .telnum {
+    padding: 5px 0;
+}
+    
+/* Footer */
+footer {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 15px;
+    grid-row: 4/5;
+    background-color: powderblue; /* temp */
+    text-align: center;
+}
+
+/* Headings, p, span, etc*/
+h1 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+h1 span {
+    font-size: 1.8rem;
+    color: pink;
+    text-shadow: 1px 1px powderblue;
+}
+
+h1 span:hover {
+    font-size: 1.8rem;
+    color: powderblue;
+    text-shadow: 1px 1px pink;
+}
+
+h2 {
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+h3 {
+    font-weight: 700;
+    text-align: center;
+}
+
+figcaption {
+    text-align: center;
+    padding: 5px 0;
+}
+
+/* Images */
+.article-image {
+    height: 500px;
+    display: block;
+    margin: 10px auto;
+}
+
+img {
+    border-radius: 2.5%;
+}

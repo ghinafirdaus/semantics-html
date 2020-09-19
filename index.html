@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <title>Semantics Tasks</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+            <!-- HEADER -->
+        <header>
+            <!-- NAV -->
+            <nav>
+                <h1>A Project <span>by Ghina Firdaus</span></h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- HERO / BANNER -->
+        <div id="banner">
+             <div class="mySlides fade">
+                 <img src="https://images.unsplash.com/photo-1469796466635-455ede028aca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" style="height:300px;">
+               </div>
+
+               <div class="mySlides fade">
+                 <img src="https://images.unsplash.com/photo-1600073956897-4fc08a2b27d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80" style="height:300px;">
+               </div>
+
+               <div class="mySlides fade">
+                 <img src="https://images.unsplash.com/photo-1600071897035-01f1db028451?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80" style="height:300px;">
+               </div>   
+               <br>
+               <div style="text-align:center">
+                 <span class="dot"></span> 
+                 <span class="dot"></span> 
+                 <span class="dot"></span> 
+             </div>
+        </div>
+        <!-- MAIN -->
+        <main>
+        <!-- SECTION -->
+        <section>
+            <!-- ARTICLE I-->
+            <article>
+                <h2>Articles</h2>
+                <h3>Lorem Ipsum Dolor Sit Amet</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero optio sit perspiciatis animi placeat, error, sapiente adipisci fugiat ipsam vel, tenetur inventore nulla rem eum! Accusantium, dignissimos sit qui numquam quasi distinctio!</p>
+                <!-- FIGURE -->
+                <figure>
+                    <img class="article-image" src="https://images.unsplash.com/photo-1469796466635-455ede028aca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Santorini, Greece by Alexandre Chambon">
+                    <!-- FIGCAPTION -->
+                    <figcaption>Santorini, Greece by Joshua Rondeau</figcaption>
+
+                </figure>
+            </article>
+
+            <!-- ARTICLE II-->
+            <article>
+                <h3>Lorem Ipsum Dolor</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore nesciunt alias quidem soluta fugit beatae consequuntur velit sapiente harum pariatur, cupiditate ipsa deserunt neque architecto est nobis corporis commodi facilis!</p>
+                <!-- FIGURE -->
+                <figure>
+                    <img class="article-image" src="https://images.unsplash.com/photo-1600073956897-4fc08a2b27d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80" alt="Santorini, Greece by Joshua Rondeau">
+                    <!-- FIGCAPTION -->
+                    <figcaption>Santorini, Greece by Joshua Rondeau</figcaption>
+                </figure>
+            </article>
+
+            <!-- ARTICLE III-->
+            <article>
+                <h3>Lorem Ipsum Dolor Sit</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro enim provident repellat excepturi unde, iure laboriosam facilis veniam dignissimos, recusandae ex impedit asperiores tempore possimus veritatis illo.</p>
+                <!-- FIGURE -->
+                <figure>
+                    <img class="article-image" src="https://images.unsplash.com/photo-1600071897035-01f1db028451?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80" alt="Santorini, Greece by Joshua Rondeau">
+                    <!-- FIGCAPTION -->
+                    <figcaption>Santorini, Greece by Joshua Rondeau</figcaption>
+
+                </figure>
+            </article>
+        </section>
+        <!-- SECTION -->
+        <section>
+                <address>
+                    <!-- ADDRESS -->
+                    <div class="street">123456 Jakarta, Indonesia.</div>
+                    <div class="telnum">(021) 123 456 789</div>
+                </address>
+        </section>
+        </main>
+        <!-- FOOTER -->
+        <footer>
+            <p>Copyright © 2020 Ghina Firdaus. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
+
+<!-- Script for Banner -->
+<script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+</script>
+<!--
+ Ketentuan :
+ - nav terdiri dari : Home, Article, Projects, About
+ - referensi hero/banner : https://www.w3schools.com/howto
+ - articel bisa menggunakan lorem
+ - buat 3 article
+ - image bisa menggunakan https://unsplash.com
+ - alamat bisa menggunakan alamat kamu
+ - ikuti petunjuk komentar di setiap section, komentar tidak boleh
+dihapus saat mengumpulkan
+ Referensi :
+ - https://www.w3schools.com/TAGS/
+ - https://webflow.com/blog/html5-semantic-elements-and-webflowthe-essential-guide
+ - http://html5doctor.com/the-article-element/
+ - https://www.pluralsight.com/guides/semantic-html
+ Pengumpulan :
+ - mengirimkan file saat turn in
+ - melampikna link codepen(jika berhasil post di codepen)
+ Notes :
+ Nilai plus jika bisa upload sekalian di https://codepen.io/
+ > jangan lupa baca doa guys sebelum mengerjakan <
+-->
